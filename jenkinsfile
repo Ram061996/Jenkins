@@ -22,7 +22,8 @@ pipeline {
         
          stage('Monitoring') {
             steps {
-                echo 'I am in Monitoring Phase'
+                echo 'I am in Monitoring phase'
+                build 'freestyle-url-monitoring'
             }
         }
         stage('VersionCheck') {
